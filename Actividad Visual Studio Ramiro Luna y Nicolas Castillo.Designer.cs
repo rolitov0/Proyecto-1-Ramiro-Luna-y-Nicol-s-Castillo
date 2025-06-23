@@ -30,6 +30,8 @@
         {
             this.btnSaludar = new System.Windows.Forms.Button();
             this.lblHolaMundo = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnSaludar
@@ -52,11 +54,30 @@
             this.lblHolaMundo.Text = "                            ";
             this.lblHolaMundo.Click += new System.EventHandler(this.label1_Click);
             // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(237, 76);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(95, 13);
+            this.lblNombre.TabIndex = 2;
+            this.lblNombre.Text = "Escribe tu nombre:";
+            this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(329, 76);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblHolaMundo);
             this.Controls.Add(this.btnSaludar);
             this.Name = "Form1";
@@ -71,6 +92,8 @@
 
         private System.Windows.Forms.Button btnSaludar;
         private System.Windows.Forms.Label lblHolaMundo;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.TextBox txtNombre;
     }
 }
 

@@ -29,8 +29,12 @@ namespace FrmHolaMundo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            lblHolaMundo.Text = "Hola Mundo";
+            lblHolaMundo.Text = "Hola " + txtNombre.Text;
         }
-    
+
+        private void lblNombre_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
